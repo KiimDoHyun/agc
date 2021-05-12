@@ -1,18 +1,38 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <logIn />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import logIn from "@/views/logIn.vue";
 
 export default {
-  name: 'Home',
   components: {
-    HelloWorld
-  }
-}
+    logIn,
+  },
+
+  // created() {
+  //   this.getApi();
+  // },
+
+  // methods: {
+  //   getApi() {
+  //     this.axios
+  //       .post(`http://192.168.0.13:8000/logIn`, {
+  //         email: "abc",
+  //         password: "123123",
+  //       })
+  //       .then((res) => {
+  //         // this.arrr = res.data;
+  //         this.$router.go("/treeView");
+  //         console.log(res);
+  //       })
+  //       .catch((err) => {
+  //         console.log(err);
+  //       });
+  //   },
+  // },
+};
 </script>
